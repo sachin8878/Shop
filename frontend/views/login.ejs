@@ -1,0 +1,42 @@
+<marquee direction="left" height="50px" bgcolor="grey" scrollamount="20" ><h1 style="color:greenyellow ;"> <- Welcome To Login Page -></h1></marquee>
+<form action="/login" method="post">
+    <div class="container mt-3 mb-3">
+        <div class="row">
+            <% if(status && message) { %>
+                <div class="col-12">
+                    <h3 class="text text-danger"><%= message; %></h3>
+                </div>
+            <%}%>
+            <div class="col-6 offset-3">
+                <div class="card">
+                    <div class="card-header" style="background-color:orangered ;">
+                        <h2 class="text-center text-info">Login Portal</h2>
+                    </div>
+                    <div class="card-body" style="background: skyblue;">
+                        <div class="row">
+                            <div class="col-12 mb-3 mt-3">
+                                <label class="form-label">User name/ Email</label>
+                                <input type="text" class="form-control" name="username">
+                            </div>
+                           
+                            <div class="col-12 mb-3 mt-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer" style="background:green;">
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                        <button style="background-color:brown; font-size: large;" class="btn text-center" type="submit"><h5 class="text-info">Login</h5></button>
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<marquee direction="right" height="50px" bgcolor="grey" scrollamount="20" ><h1 style="color:greenyellow ;"> <- Welcome To Login Page -></h1></marquee>

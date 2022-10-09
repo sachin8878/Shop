@@ -1,0 +1,27 @@
+<div class="col-12">
+    <div class="row">
+        
+        <% for(let i = 0; i<products.length; i++){ let prod = products[i]; %>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header bg-info">
+                    <h2><%= prod.title; %></h2>
+                </div>
+                <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/61KVX-MbIUL._AC_SS450_.jpg" style="width:100%"/>
+                </div>
+                <div class="card-footer bg-primary">
+                    <div class="row">
+                        <div class="col-6">
+                            <span>Price: <span><%= prod.price; %>/-</span></span>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-success">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% }  %>
+    </div>
+</div>

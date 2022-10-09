@@ -1,0 +1,39 @@
+<div class="container-fluid mt-3">
+    <table class="table table-bordered table-hovered" style="background-color:peru ;">
+        <thead>
+            <tr>
+                <th>Sr. no</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Gender</th>
+                <th style="width: 150px;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let i = 0; i < users.length; i++){ %>
+                <tr>
+                    <td>
+                        <%= i + 1; %>
+                    </td>
+                    <td>
+                        <%= users[i].first_name +" "+ users[i].last_name ;%>
+                    </td>
+                    <td>
+                        <%= users[i].email; %>
+                    </td>
+                    <td>
+                        <%= users[i].contact; %>
+                    </td>
+                    <td>
+                        <%= users[i].gender; %>
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-primary">Edit</a>
+                        <a href="#" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                <% }%>
+        </tbody>
+    </table>
+</div>
